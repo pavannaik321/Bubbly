@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding : 0;
+    font-family: "monospace";
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(142, 193, 142);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#panel{
+    overflow: hidden;
+    width:80%;
+    height: 80%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+#ptop{
+    padding: 0% 30%;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(72, 104, 72);
+    justify-content: space-between;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elem h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.box{
+    color: rgb(72, 104, 72);
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#pbtm{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 8px;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    /* subract percentage form px */
+    height: calc(100% - 100px);
+}
+
+.bubble{
+    width: 50px;
+    height: 50px;
+    background-color:  rgb(92, 131, 92);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color:  rgb(57, 84, 57);
+}
+
+
+  /* score card */
+
+  #scoreCard{
+    width: 50%;
+    height: 40%;
+    background-color: #8ec18e;
+    position: absolute;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .box{
+        padding: 3px 12px;
+        color: rgb(72, 104, 72);
+    font-weight: 600;
+    font-size: 17px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    }
+
+
+    #ptop{
+        justify-content: space-around;
+        gap: 0.3rem ;
+    }
+
+    .elem{
+        gap: 4px;
+    }
+    #scoreCard{
+        width: 75%;
+        height: 25%;
+        background-color: aqua;
+        
+      }
+      .bubble{
+        width: 40px;
+        height: 40px;
+      }
+
+  }
+
